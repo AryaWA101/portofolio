@@ -127,3 +127,40 @@ footer button {
     font-size: 14px;
     color: #94a3b8;
 }
+
+/* kalau di hp */
+@media screen and (max-width: 768px) {
+    
+    nav {
+        flex-direction: column; /* Mengubah susunan menyamping jadi ke bawah */
+        padding: 15px 20px;
+        gap: 15px; /* Memberi jarak antara Logo dan Menu */
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap; /* Jika layar sangat kecil, menu otomatis turun */
+    }
+
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px; /* Font dikecilkan agar pas di HP */
+    }
+
+    .projects {
+        padding: 50px 20px;
+    }
+
+    .card {
+        width: 100%; /* Memenuhi lebar layar HP */
+        max-width: 320px; /* Batas maksimal lebar kartu */
+        padding: 20px;
+    }
+}
